@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">530,318</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tc_mystore_TestCases.TC_EndToEnd</td><td><a href="#m0">endToEndTest</a></td><td rowspan="1">1629446348906</td><td rowspan="1">24093</td></tr><tr class="failedodd"><td rowspan="2">Tc_mystore_TestCases.Test_Homepage</td><td><a href="#m1">orderHistoryandDetailsTest</a></td><td rowspan="1">1629445901551</td><td rowspan="1">6254</td></tr><tr class="failedodd"><td><a href="#m2">wishListTest</a></td><td rowspan="1">1629445929438</td><td rowspan="1">5688</td></tr><tr class="failedeven"><td rowspan="1">Tc_mystore_TestCases.Test_LoginPage</td><td><a href="#m3">loginTest</a></td><td rowspan="1">1629446241869</td><td rowspan="1">7073</td></tr><tr class="failedodd"><td rowspan="1">Tc_mystore_TestCases.Test_OrderPageTest</td><td><a href="#m4">verifyTotalPrice</a></td><td rowspan="1">1629446165598</td><td rowspan="1">36606</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tc_mystore_TestCases.Test_AddToCartPage</td><td><a href="#m5">addToCartTest</a></td><td rowspan="1">1629446286999</td><td rowspan="1">20527</td></tr><tr class="passedodd"><td rowspan="2">Tc_mystore_TestCases.Test_Indexpage</td><td><a href="#m6">verifyLogo</a></td><td rowspan="1">1629446074406</td><td rowspan="1">185</td></tr><tr class="passedodd"><td><a href="#m7">verifyTitle</a></td><td rowspan="1">1629446091802</td><td rowspan="1">108</td></tr><tr class="passedeven"><td rowspan="1">Tc_mystore_TestCases.Test_SearchResultpage</td><td><a href="#m8">productAvailabilityTest</a></td><td rowspan="1">1629445986348</td><td rowspan="1">9175</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">Tc_mystore_TestCases.TC_EndToEnd#endToEndTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>t-shirt</td><td>2.0</td><td>M</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:221)
+	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:65)
+	at Tc_mystore_PageObjects.TC_Actionclass.click(TC_Actionclass.java:41)
+	at Tc_mystore_PageObjects.TC_Orderpage.clickOnCheckOut(TC_Orderpage.java:43)
+	at Tc_mystore_TestCases.TC_EndToEnd.endToEndTest(TC_EndToEnd.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tc_mystore_TestCases.Test_Homepage#orderHistoryandDetailsTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin@xyz.com</td><td>admin@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
+	at Tc_mystore_TestCases.Test_Homepage.orderHistoryandDetailsTest(Test_Homepage.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tc_mystore_TestCases.Test_Homepage#wishListTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin@xyz.com</td><td>admin@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
+	at Tc_mystore_TestCases.Test_Homepage.wishListTest(Test_Homepage.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tc_mystore_TestCases.Test_LoginPage#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin@xyz.com</td><td>admin@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException
+	at Tc_mystore_TestCases.Test_LoginPage.loginTest(Test_LoginPage.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tc_mystore_TestCases.Test_OrderPageTest#verifyTotalPrice</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>t-shirt</td><td>2.0</td><td>M</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at Tc_mystore_PageObjects.TC_Orderpage.getUnitPrice(TC_Orderpage.java:29)
+	at Tc_mystore_TestCases.Test_OrderPageTest.verifyTotalPrice(Test_OrderPageTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tc_mystore_TestCases.Test_AddToCartPage#addToCartTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>t-shirt</td><td>2.0</td><td>M</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Tc_mystore_TestCases.Test_Indexpage#verifyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Tc_mystore_TestCases.Test_Indexpage#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Tc_mystore_TestCases.Test_SearchResultpage#productAvailabilityTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>t-shirt</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
