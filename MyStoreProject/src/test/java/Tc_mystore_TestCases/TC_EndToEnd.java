@@ -66,7 +66,7 @@ public class TC_EndToEnd extends TC_Baseclass {
 		String actualMessage=orderConfirmationPage.validateConfirmMessage();
 		String expectedMsg="Your order on My Store is complete.";
 		Assert.assertEquals(actualMessage, expectedMsg);
-		TC_Logclass.endTestCase("endToEndTest");
+		TC_Logclass.endTestCase("endToEndTests");
 	}
 
 }
